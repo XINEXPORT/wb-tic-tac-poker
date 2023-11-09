@@ -1,6 +1,6 @@
-let player='x';
+let player='X';
 
-function play() {
+function play(evt) { console.log('playhit');
 const targetSquare = evt.target;
 targetSquare.innerText = player;
 if (player==='X') {
@@ -8,6 +8,7 @@ if (player==='X') {
 }else{
     player='X';
 }
+winnerRules();
 }
 
 const squares=document.querySelectorAll ('.square');
@@ -43,6 +44,7 @@ if(innerTextA && innerTextA===innerTextB && innerTextB===innerTextC){
 return alert('winner!');
 }
 }
+gamerOver();
 }
 
 function gamerOver(){
@@ -50,6 +52,6 @@ function gamerOver(){
         if (square.innerText === '')
         return false;
     }
-    return true;
+    return alert('cat scratch!');
 }
 
