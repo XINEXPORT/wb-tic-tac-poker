@@ -2,16 +2,27 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 nav {
   height: 15vh;
-  background: #444;
-  color: #ddd;
+  background: radial-gradient(
+    #ff229c,
+    #ff86cb,
+    rgb(255, 255, 255),
+    pink
+  );
+  color: #000000;
 }
 
 main {
-  background: #eee;
+  background-image: radial-gradient(
+    #ff229c,
+    #ff86cb,
+    rgb(250, 246, 246),
+    pink
+  );
   height: 85vh;
 }
 
@@ -33,4 +44,10 @@ table {
   border: 1px solid #000;
   text-align: center;
   font-size: 2em;
+}
+
+.square{
+  background: radial-gradient(#ff86cb, pink, white);
+  border: 80px solid #000;
+  border-radius: 50%;
 }

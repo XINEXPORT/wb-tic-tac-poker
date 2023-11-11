@@ -52,6 +52,6 @@ function gamerOver(){
         if (square.innerText === '')
         return false;
     }
-    return alert('cat scratch!');
+    return alert('Scratch!');
 }
 
